@@ -1,5 +1,5 @@
 {
-    "name": "astrotomic/laravel-translatable",
+    "name": "zakirhossen23/laravel-translatable",
     "description": "A Laravel package for multilingual models",
     "license": "MIT",
     "keywords": [
@@ -25,8 +25,8 @@
     "homepage": "https://astrotomic.info",
     "support": {
         "email": "dev@astrotomic.info",
-        "issues": "https://github.com/Astrotomic/laravel-translatable/issues",
-        "source": "https://github.com/Astrotomic/laravel-translatable",
+        "issues": "https://github.com/Zakirhossen23/laravel-translatable/issues",
+        "source": "https://github.com/Zakirhossen23/laravel-translatable",
         "docs": "https://docs.astrotomic.info/laravel-translatable"
     },
     "require": {
@@ -47,7 +47,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Astrotomic\\Translatable\\": "src/Translatable/"
+            "Zakirhossen23\\Translatable\\": "src/Translatable/"
         }
     },
     "autoload-dev": {
@@ -61,7 +61,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Astrotomic\\Translatable\\TranslatableServiceProvider"
+                "Zakirhossen23\\Translatable\\TranslatableServiceProvider"
             ]
         }
     },

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Astrotomic\Translatable\Validation\Rules;
+namespace Zakirhossen23\Translatable\Validation\Rules;
 
 use Closure;
 use Illuminate\Contracts\Validation\InvokableRule;

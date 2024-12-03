@@ -1,9 +1,9 @@
 <?php
 
-namespace Astrotomic\Translatable;
+namespace Zakirhossen23\Translatable;
 
 use ArrayAccess;
-use Astrotomic\Translatable\Exception\LocalesNotDefinedException;
+use Zakirhossen23\Translatable\Exception\LocalesNotDefinedException;
 use Illuminate\Contracts\Config\Repository as ConfigContract;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Translation\Translator as TranslatorContract;

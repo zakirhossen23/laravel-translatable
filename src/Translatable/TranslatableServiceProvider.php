@@ -1,9 +1,9 @@
 <?php
 
-namespace Astrotomic\Translatable;
+namespace Zakirhossen23\Translatable;
 
-use Astrotomic\Translatable\Validation\Rules\TranslatableExists;
-use Astrotomic\Translatable\Validation\Rules\TranslatableUnique;
+use Zakirhossen23\Translatable\Validation\Rules\TranslatableExists;
+use Zakirhossen23\Translatable\Validation\Rules\TranslatableUnique;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rule;
 

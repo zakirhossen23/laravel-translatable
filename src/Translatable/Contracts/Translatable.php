@@ -1,6 +1,6 @@
 <?php
 
-namespace Astrotomic\Translatable\Contracts;
+namespace Zakirhossen23\Translatable\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;

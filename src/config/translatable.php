@@ -142,7 +142,7 @@ return [
      *
      */
     'rule_factory' => [
-        'format' => \Astrotomic\Translatable\Validation\RuleFactory::FORMAT_ARRAY,
+        'format' => \Zakirhossen23\Translatable\Validation\RuleFactory::FORMAT_ARRAY,
         'prefix' => '%',
         'suffix' => '%',
     ],

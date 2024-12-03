@@ -1,8 +1,8 @@
 <?php
 
-namespace Astrotomic\Translatable\Validation;
+namespace Zakirhossen23\Translatable\Validation;
 
-use Astrotomic\Translatable\Locales;
+use Zakirhossen23\Translatable\Locales;
 use Illuminate\Contracts\Config\Repository;
 use InvalidArgumentException;
 

@@ -1,15 +1,15 @@
 # Introduction
 
 [![Latest Version](http://img.shields.io/packagist/v/astrotomic/laravel-translatable.svg?label=Release&style=for-the-badge)](https://packagist.org/packages/astrotomic/laravel-translatable)
-[![MIT License](https://img.shields.io/github/license/Astrotomic/laravel-translatable.svg?label=License&color=blue&style=for-the-badge)](https://github.com/Astrotomic/laravel-translatable/blob/master/LICENSE)
-[![Offset Earth](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-green?style=for-the-badge)](https://plant.treeware.earth/Astrotomic/laravel-translatable)
+[![MIT License](https://img.shields.io/github/license/Zakirhossen23/laravel-translatable.svg?label=License&color=blue&style=for-the-badge)](https://github.com/Zakirhossen23/laravel-translatable/blob/master/LICENSE)
+[![Offset Earth](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-green?style=for-the-badge)](https://plant.treeware.earth/Zakirhossen23/laravel-translatable)
 [![Larabelles](https://img.shields.io/badge/Larabelles-%F0%9F%A6%84-lightpink?style=for-the-badge)](https://www.larabelles.com/)
 
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Astrotomic/laravel-translatable/phpunit.yml?style=flat-square&logoColor=white&logo=github&label=PHPunit)](https://github.com/Astrotomic/laravel-translatable/actions?query=workflow%3Aphpunit)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Astrotomic/laravel-translatable/pint.yml?style=flat-square&logoColor=white&logo=github&label=Pint)](https://github.com/Astrotomic/laravel-translatable/actions?query=workflow%3Apint)
-[![Codecov Coverage](https://img.shields.io/codecov/c/github/Astrotomic/laravel-translatable?logo=codecov&logoColor=white&label=Codecov&style=flat-square)](https://codecov.io/gh/Astrotomic/laravel-translatable)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Zakirhossen23/laravel-translatable/phpunit.yml?style=flat-square&logoColor=white&logo=github&label=PHPunit)](https://github.com/Zakirhossen23/laravel-translatable/actions?query=workflow%3Aphpunit)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Zakirhossen23/laravel-translatable/pint.yml?style=flat-square&logoColor=white&logo=github&label=Pint)](https://github.com/Zakirhossen23/laravel-translatable/actions?query=workflow%3Apint)
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/Zakirhossen23/laravel-translatable?logo=codecov&logoColor=white&label=Codecov&style=flat-square)](https://codecov.io/gh/Zakirhossen23/laravel-translatable)
 [![Total Downloads](https://img.shields.io/packagist/dt/astrotomic/laravel-translatable.svg?label=Downloads&style=flat-square)](https://packagist.org/packages/astrotomic/laravel-translatable)
-[![GitBook](https://img.shields.io/badge/GitBook-Astrotomic-7e57c2.svg?style=flat-square)](https://docs.astrotomic.info/laravel-translatable)
+[![GitBook](https://img.shields.io/badge/GitBook-Zakirhossen23-7e57c2.svg?style=flat-square)](https://docs.astrotomic.info/laravel-translatable)
 
 <p align="center">
     <img src="/art/socialcard.png" alt="laravel-translatable socialcard">
@@ -103,11 +103,11 @@ Please see [CHANGELOG](docs/changelog.md) for more information on what has chang
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/Astrotomic/.github/blob/master/CONTRIBUTING.md) for details. You could also be interested in [CODE OF CONDUCT](https://github.com/Astrotomic/.github/blob/master/CODE_OF_CONDUCT.md).
+Please see [CONTRIBUTING](https://github.com/Zakirhossen23/.github/blob/master/CONTRIBUTING.md) for details. You could also be interested in [CODE OF CONDUCT](https://github.com/Zakirhossen23/.github/blob/master/CODE_OF_CONDUCT.md).
 
 ### Security
 
-If you discover any security related issues, please check [SECURITY](https://github.com/Astrotomic/.github/blob/master/SECURITY.md) for steps to report it.
+If you discover any security related issues, please check [SECURITY](https://github.com/Zakirhossen23/.github/blob/master/SECURITY.md) for steps to report it.
 
 ## Credits
 
@@ -134,6 +134,6 @@ You're free to use this package, but if it makes it to your production environme
 
 It’s now common knowledge that one of the best tools to tackle the climate crisis and keep our temperatures from rising above 1.5C is to [plant trees](https://www.bbc.co.uk/news/science-environment-48870920). If you contribute to my forest you’ll be creating employment for local families and restoring wildlife habitats.
 
-You can buy trees at [offset.earth/treeware](https://plant.treeware.earth/Astrotomic/laravel-translatable)
+You can buy trees at [offset.earth/treeware](https://plant.treeware.earth/Zakirhossen23/laravel-translatable)
 
 Read more about Treeware at [treeware.earth](https://treeware.earth)

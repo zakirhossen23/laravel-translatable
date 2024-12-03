@@ -1,9 +1,9 @@
 <?php
 
-namespace Astrotomic\Translatable;
+namespace Zakirhossen23\Translatable;
 
-use Astrotomic\Translatable\Traits\Relationship;
-use Astrotomic\Translatable\Traits\Scopes;
+use Zakirhossen23\Translatable\Traits\Relationship;
+use Zakirhossen23\Translatable\Traits\Scopes;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
