@@ -52,7 +52,7 @@ class Locales implements Arrayable, ArrayAccess
 
     public function current(): string
     {
-        return $this->config->get('translatable.locale') ?: $this->translator->getLocale();
+        return $this->all()[ $this->config->get('translatable.locale') ?: $this->translator->getLocale()];
     }
 
     public function forget(string $locale): void
