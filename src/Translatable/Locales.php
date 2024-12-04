@@ -93,7 +93,7 @@ class Locales implements Arrayable, ArrayAccess
     public function load(): void
 
     {
-        $locales_table = $this->config->get('translatable.locales_table',null);
+        $locales_table = $this->config->get('translatable.model_namespace','').$this->config->get('translatable.locales_table',null);
         $locales_table_column = $this->config->get('translatable.locales_table_column','');
         $locales_lang_id_column = $this->config->get('translatable.locales_lang_id_column','');
 

@@ -93,6 +93,7 @@ return [
     |
     */
     'translation_model_namespace' => null,
+    'model_namespace'=>'\App\Model'
 
     /*
     |--------------------------------------------------------------------------
