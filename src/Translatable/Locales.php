@@ -103,7 +103,7 @@ class Locales implements Arrayable, ArrayAccess
             throw LocalesNotDefinedException::make();
         }
 
-        $allLocales = $$locales_table::get();
+        $allLocales = $locales_table::get();
 
 
         $this->locales = [];

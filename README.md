@@ -1,6 +1,6 @@
 # Introduction
 
-[![Latest Version](http://img.shields.io/packagist/v/astrotomic/laravel-translatable.svg?label=Release&style=for-the-badge)](https://packagist.org/packages/astrotomic/laravel-translatable)
+[![Latest Version](http://img.shields.io/packagist/v/zakirhossen23/laravel-translatable.svg?label=Release&style=for-the-badge)](https://packagist.org/packages/zakirhossen23/laravel-translatable)
 [![MIT License](https://img.shields.io/github/license/Zakirhossen23/laravel-translatable.svg?label=License&color=blue&style=for-the-badge)](https://github.com/Zakirhossen23/laravel-translatable/blob/master/LICENSE)
 [![Offset Earth](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-green?style=for-the-badge)](https://plant.treeware.earth/Zakirhossen23/laravel-translatable)
 [![Larabelles](https://img.shields.io/badge/Larabelles-%F0%9F%A6%84-lightpink?style=for-the-badge)](https://www.larabelles.com/)
@@ -8,8 +8,8 @@
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Zakirhossen23/laravel-translatable/phpunit.yml?style=flat-square&logoColor=white&logo=github&label=PHPunit)](https://github.com/Zakirhossen23/laravel-translatable/actions?query=workflow%3Aphpunit)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Zakirhossen23/laravel-translatable/pint.yml?style=flat-square&logoColor=white&logo=github&label=Pint)](https://github.com/Zakirhossen23/laravel-translatable/actions?query=workflow%3Apint)
 [![Codecov Coverage](https://img.shields.io/codecov/c/github/Zakirhossen23/laravel-translatable?logo=codecov&logoColor=white&label=Codecov&style=flat-square)](https://codecov.io/gh/Zakirhossen23/laravel-translatable)
-[![Total Downloads](https://img.shields.io/packagist/dt/astrotomic/laravel-translatable.svg?label=Downloads&style=flat-square)](https://packagist.org/packages/astrotomic/laravel-translatable)
-[![GitBook](https://img.shields.io/badge/GitBook-Zakirhossen23-7e57c2.svg?style=flat-square)](https://docs.astrotomic.info/laravel-translatable)
+[![Total Downloads](https://img.shields.io/packagist/dt/zakirhossen23/laravel-translatable.svg?label=Downloads&style=flat-square)](https://packagist.org/packages/zakirhossen23/laravel-translatable)
+[![GitBook](https://img.shields.io/badge/GitBook-Zakirhossen23-7e57c2.svg?style=flat-square)](https://docs.zakirhossen23.info/laravel-translatable)
 
 <p align="center">
     <img src="/art/socialcard.png" alt="laravel-translatable socialcard">
@@ -19,7 +19,7 @@
 
 This is a Laravel package for translatable models. Its goal is to remove the complexity in retrieving and storing multilingual model instances. With this package you write less code, as the translations are being fetched/saved when you fetch/save your instance.
 
-The full documentation can be found at [GitBook](https://docs.astrotomic.info/laravel-translatable).
+The full documentation can be found at [GitBook](https://docs.zakirhossen23.info/laravel-translatable).
 
 ## Installation
 
