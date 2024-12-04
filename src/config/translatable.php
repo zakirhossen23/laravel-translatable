@@ -18,6 +18,9 @@ return [
             'CO', // colombian spanish
         ],
     ],
+    'locales_table'=>'TblLanguage',
+    'locales_table_column'=>'LanguageCode',
+    'locales_lang_id_column'=>'LangID',
 
     /*
     |--------------------------------------------------------------------------

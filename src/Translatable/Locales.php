@@ -91,25 +91,24 @@ class Locales implements Arrayable, ArrayAccess
     }
 
     public function load(): void
+
     {
+        $locales_table = $this->config->get('translatable.locales_table',null);
+        $locales_table_column = $this->config->get('translatable.locales_table_column','');
+        $locales_lang_id_column = $this->config->get('translatable.locales_lang_id_column','');
+
         $localesConfig = (array) $this->config->get('translatable.locales', []);
 
-        if (empty($localesConfig)) {
+        if (!isset($locales_table) || empty($locales_table_column)|| empty($locales_lang_id_column)) {
             throw LocalesNotDefinedException::make();
         }
 
-        $this->locales = [];
-        foreach ($localesConfig as $key => $locale) {
-            if (is_string($key) && is_array($locale)) {
-                $this->locales[$key] = $key;
+        $allLocales = $$locales_table::get();
 
-                foreach ($locale as $country) {
-                    $countryLocale = $this->getCountryLocale($key, $country);
-                    $this->locales[$countryLocale] = $countryLocale;
-                }
-            } elseif (is_string($locale)) {
-                $this->locales[$locale] = $locale;
-            }
+
+        $this->locales = [];
+        foreach ($allLocales as  $locale) {
+            $this->locales[$locale[$locales_table_column]] = $locale[$locales_lang_id_column];
         }
     }
 
