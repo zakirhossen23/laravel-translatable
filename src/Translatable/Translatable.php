@@ -193,41 +193,50 @@ trait Translatable
     public function getTranslation(?string $locale = null, ?bool $withFallback = null): ?Model
     {
         $configFallbackLocale = $this->getFallbackLocale();
-        $locale = $locale ?: $this->locale();
-        $withFallback = $withFallback === null ? $this->useFallback() : $withFallback;
         $fallbackLocale = $this->getFallbackLocale($locale);
 
-        if ($translation = $this->getTranslationByLocaleKey($locale)) {
-            return $translation;
-        }
+        $withFallback = $withFallback === null ? $this->useFallback() : $withFallback;
 
-        if ($withFallback && $fallbackLocale) {
-            if ($translation = $this->getTranslationByLocaleKey($fallbackLocale)) {
+        $locale = $locale ?: $this->locale();
+
+        if ((  $locale  != $fallbackLocale) ) {
+            if (($translation = $this->getTranslationByLocaleKey($locale))){
+
+
                 return $translation;
             }
 
-            if (
-                is_string($configFallbackLocale)
-                && $fallbackLocale !== $configFallbackLocale
-                && $translation = $this->getTranslationByLocaleKey($configFallbackLocale)
-            ) {
-                return $translation;
-            }
         }
 
-        if ($withFallback && $configFallbackLocale === null) {
-            $configuredLocales = $this->getLocalesHelper()->all();
+        if ( $fallbackLocale) {
 
-            foreach ($configuredLocales as $configuredLocale) {
-                if (
-                    $locale !== $configuredLocale
-                    && $fallbackLocale !== $configuredLocale
-                    && $translation = $this->getTranslationByLocaleKey($configuredLocale)
-                ) {
-                    return $translation;
-                }
-            }
+            return null;
+            // if ($translation = $this->getTranslationByLocaleKey($fallbackLocale)) {
+            //     return $translation;
+            // }
+
+            // if (
+            //     is_string($configFallbackLocale)
+            //     && $fallbackLocale !== $configFallbackLocale
+            //     && $translation = $this->getTranslationByLocaleKey($configFallbackLocale)
+            // ) {
+            //     return $translation;
+            // }
         }
+
+        // if ($withFallback && $configFallbackLocale === null) {
+        //     $configuredLocales = $this->getLocalesHelper()->all();
+
+        //     foreach ($configuredLocales as $configuredLocale) {
+        //         if (
+        //             $locale !== $configuredLocale
+        //             && $fallbackLocale !== $configuredLocale
+        //             && $translation = $this->getTranslationByLocaleKey($configuredLocale)
+        //         ) {
+        //             return $translation;
+        //         }
+        //     }
+        // }
 
         return null;
     }
@@ -362,6 +371,7 @@ trait Translatable
 
     protected function locale(): string
     {
+
         if ($this->getDefaultLocale()) {
             return $this->getDefaultLocale();
         }
@@ -413,9 +423,10 @@ trait Translatable
         ) {
             $translation = $this->getTranslation($this->getFallbackLocale(), false);
         }
+        if ($translation === null) return parent::getAttribute($attribute);
 
         if ($translation instanceof Model) {
-            return $translation->$attribute;
+            return $translation->getAttribute($attribute);
         }
 
         return null;
@@ -434,6 +445,7 @@ trait Translatable
 
     protected function getTranslationByLocaleKey(string $key): ?Model
     {
+
         if (
             $this->relationLoaded('translation')
             && $this->translation
@@ -442,7 +454,9 @@ trait Translatable
             return $this->translation;
         }
 
-        return $this->translations->firstWhere($this->getLocaleKey(), $key);
+
+
+        return $this->translations()->firstWhere($this->getLocaleKey(), $key);
     }
 
     protected function toArrayAlwaysLoadsTranslations(): bool

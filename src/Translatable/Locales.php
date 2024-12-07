@@ -52,7 +52,15 @@ class Locales implements Arrayable, ArrayAccess
 
     public function current(): string
     {
-        return $this->locales[ $this->config->get('translatable.locale') ?: $this->translator->getLocale()];
+
+        $key = app()->getLocale()?: $this->config->get('translatable.locale') ;
+        if (array_key_exists($key,$this->locales)){
+            return $this->locales[$key];
+        }else{
+            return $key;
+        }
+
+
     }
 
     public function forget(string $locale): void
