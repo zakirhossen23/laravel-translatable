@@ -59,7 +59,7 @@ trait Relationship
             return $this->translationForeignKey;
         }
 
-        return $this->getForeignKey();
+        return $this->getKeyName();
     }
 
     public function translation(): HasOne
@@ -75,6 +75,8 @@ trait Relationship
 
     public function translations(): HasMany
     {
+
+
         return $this->hasMany($this->getTranslationModelName(), $this->getTranslationRelationKey());
     }
 
